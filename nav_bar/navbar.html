@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* SHARED*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: black;
+            background: lightblue;
+        }
+
+
+        li {
+            list-style: none;
+        }
+        
+        /* UTILS */
+
+        .group::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* HEADER */
+
+        .header {
+            background-color: red;
+
+        }
+
+        .header-nav {
+          
+            width: 800px;
+            margin: auto;
+            border: mediumblue 10px solid;
+
+        }
+
+        .header-nav-logo {
+         
+            float: left;
+            text-decoration-style: none;
+
+        }
+
+        .header-nav-logo > a {
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            display: block;
+
+        }
+
+        .header-nav-list {
+            float: right;
+        }
+
+        .header-nav-list > li {
+           
+            float: left;
+            color: white;
+            font-weight: bold;
+            cursor: -moz-zoom-in;
+
+        }
+
+        .header-nav-list > li:hover {
+            background: cornsilk;
+        }
+
+         .header-nav-list > li {
+            display: block;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            
+        }
+ 
+        .content {
+            width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+
+        }
+
+        .content > p {
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+<header class="header">
+    <nav class="header-nav group">
+        <h1 class="header-nav-logo"> <a href="#">App Academy</a> </h1>
+
+        <ul class="header-nav-list group">
+            <li>Friend</li>
+            <li>Profile</li>
+            <li>Matches</li>
+        </ul>
+    </nav>
+</header>
+
+<main class="content">
+
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, esse, voluptatem alias harum perspiciatis laborum velit quod ad repudiandae reprehenderit aut odio cumque illum explicabo, id aliquid expedita dicta voluptates.
+</main>
+
+
+
+</body>
+</html>
